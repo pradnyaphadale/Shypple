@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.2 on win32)" generated="20220427 01:34:43.302" rpa="false" schemaversion="2">
+<suite id="s1" name="Get position" source="C:\Users\a679269\OneDrive - Worldline\Personal\Shypple\Get_position.robot">
+<test id="s1-t1" name="Get QA Test Automation position">
+<kw name="Given the user has access to the Shypple website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${website}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220427 01:34:43.463" level="INFO">Opening browser 'Chrome' to base url 'https://www.shypple.com/'.</msg>
+<status status="PASS" starttime="20220427 01:34:43.463" endtime="20220427 01:34:47.490"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220427 01:34:47.491" endtime="20220427 01:34:47.628"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@class="hero-heading hero"]</arg>
+<arg>Ship it real good.</arg>
+<arg>You are not on the Shypple home page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220427 01:34:47.629" level="INFO">Verifying element '//*[@class="hero-heading hero"]' contains exact text 'Ship it real good.'.</msg>
+<status status="PASS" starttime="20220427 01:34:47.628" endtime="20220427 01:34:47.732"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:43.462" endtime="20220427 01:34:47.733"/>
+</kw>
+<kw name="When user opens Careers page">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//*[@class='nav-menu-3 w-nav-menu']/*[contains(text(),'Careers')]</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='nav-menu-3 w-nav-menu']/*[contains(text(),'Careers')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 01:34:47.740" level="INFO">Clicking element '//*[@class='nav-menu-3 w-nav-menu']/*[contains(text(),'Careers')]'.</msg>
+<status status="PASS" starttime="20220427 01:34:47.738" endtime="20220427 01:34:50.196"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:47.737" endtime="20220427 01:34:50.196"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@class='page-intro-64px']</arg>
+<arg>Discover our careers</arg>
+<arg>Your not yet on the Career page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220427 01:34:50.197" level="INFO">Verifying element '//*[@class='page-intro-64px']' contains exact text 'Discover our careers'.</msg>
+<status status="PASS" starttime="20220427 01:34:50.196" endtime="20220427 01:34:50.242"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='button-primary w-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 01:34:50.243" level="INFO">Clicking element '//*[@class='button-primary w-button']'.</msg>
+<status status="PASS" starttime="20220427 01:34:50.242" endtime="20220427 01:34:50.324"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>2</arg>
+<arg>1s</arg>
+<arg>Element Text Should Be</arg>
+<arg>//*[@class='title open-positions']</arg>
+<arg>Open positions</arg>
+<arg>You are yet not on the position page</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@class='title open-positions']</arg>
+<arg>Open positions</arg>
+<arg>You are yet not on the position page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220427 01:34:50.325" level="INFO">Verifying element '//*[@class='title open-positions']' contains exact text 'Open positions'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220427 01:34:51.218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 01:34:50.351" endtime="20220427 01:34:51.218"/>
+</kw>
+<msg timestamp="20220427 01:34:51.221" level="FAIL">You are yet not on the position page</msg>
+<status status="FAIL" starttime="20220427 01:34:50.324" endtime="20220427 01:34:51.221"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@class='title open-positions']</arg>
+<arg>Open positions</arg>
+<arg>You are yet not on the position page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220427 01:34:52.228" level="INFO">Verifying element '//*[@class='title open-positions']' contains exact text 'Open positions'.</msg>
+<status status="PASS" starttime="20220427 01:34:52.227" endtime="20220427 01:34:52.257"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:50.324" endtime="20220427 01:34:52.257"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:47.736" endtime="20220427 01:34:52.257"/>
+</kw>
+<kw name="Then user should be able to find out QA Test Automation position">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<arg>//*[@class='tabs-content-5 w-tab-content']//*[@class='open-position-grid w-dyn-items']//*[contains(text(),'QA Automation Engineer')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" starttime="20220427 01:34:52.259" endtime="20220427 01:34:52.280"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>//*[@class='tabs-content-wrapper']//*[@class='open-position-grid w-dyn-items']</arg>
+<arg>QA Automation Engineer</arg>
+<arg>This position is not available</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220427 01:34:52.376" level="INFO">Element '//*[@class='tabs-content-wrapper']//*[@class='open-position-grid w-dyn-items']' contains text 'QA Automation Engineer'.</msg>
+<status status="PASS" starttime="20220427 01:34:52.280" endtime="20220427 01:34:52.376"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220427 01:34:52.376" endtime="20220427 01:34:54.567"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:52.258" endtime="20220427 01:34:54.567"/>
+</kw>
+<status status="PASS" starttime="20220427 01:34:43.454" endtime="20220427 01:34:54.568"/>
+</test>
+<status status="PASS" starttime="20220427 01:34:43.303" endtime="20220427 01:34:54.570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Get position">Get position</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
